@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<html>
+<head>
+<title>
+{% block title %}Django URL Shortner{% endblock title %}
+</title>
+{% block stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{% static "css/project.css" %}">
+{% endblock stylesheets %}
+</head>
+<body>
+<header>
+		<h2><a href="#">jibinjose.in</a></h2>
+		<nav>
+			<li><a href="#">Code</a></li>
+			<li><a href="#">Credits</a></li>
+		</nav>
+	</header>
+
+{% block content %}
+{% endblock content %}
+</body>
+</html>

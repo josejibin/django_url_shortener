@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}{% endblock title %}
+{% block content %}
+{{ block.super }}
+
+
+
+
+<section class="hero">
+		<h1>Enter a long URL to make short:</h1>
+		<div class="jj-container">
+			<form class="jj-short-url">
+				<input type="email" placeholder="Paste your original url here">
+				<a href="#" class="btn">MAKE SHORT URL</a>
+			</form>
+			<div class="jj-link-details">
+				<div class="jj-link-title">Bitly | URL Shortener and Link Management Platform</div>
+				<div class="jj-link-url">bitly.com/</div>
+				<div class="jj-link-short">https://bitly.is/1g3AhR6</div>
+			</div>
+		</div>
+	</section>
+
+
+
+{% endblock content %}
