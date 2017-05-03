@@ -2,20 +2,22 @@
 <html>
 <head>
 <title>
-{% block title %}url shortener{% endblock title %}
+{% block title %}Django URL Shortner{% endblock title %}
 </title>
 {% block stylesheets %}
-<link rel="stylesheet" type="text/css"
-href="{% static "css/project.css"
-%}">
-
+	<link rel="stylesheet" type="text/css" href="{% static "css/project.css" %}">
 {% endblock stylesheets %}
 </head>
 <body>
-<div class="content">
+<header>
+		<h2><a href="#">jibinjose.in</a></h2>
+		<nav>
+			<li><a href="#">Code</a></li>
+			<li><a href="#">Credits</a></li>
+		</nav>
+	</header>
+
 {% block content %}
-<h1>Two Scoops</h1>
 {% endblock content %}
-</div>
 </body>
 </html>
